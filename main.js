@@ -104,22 +104,22 @@ const isPalindrom = function (n) {
   }
   return true
 }
-console.log(isPalindrom(32));
+// console.log(isPalindrom(32));
 
 // =================
 
 const getPalindrom = function (...args) {
   const res = []
   for (let i = 0; i < args.length; i++) {
-    if (getPalindrom(args[i])) {
+    if (isPalindrom(args[i])) {
       res[res.length] = args[i]
     }
   }
   return res
 }
 
-// const res = getPalindrom(1,4,5,7,12)
-// console.log(res);
+const res = getPalindrom(1,4,5,7,12)
+console.log(res);
 
 
 
