@@ -68,3 +68,23 @@
 // console.log(arr);
 
 
+
+
+// problem 213
+// let arr = [1,4,5,7,12];
+// let arr2 = [];
+// console.log(getPalindromeNumbersAsArray(arr));
+// function getPalindromeNumbersAsArray(arr){
+//   for(let i = 2; i < arr.length; i++){
+//     let sum = 0;
+//     for(let j = 2; j < arr[i]; j++){
+//       if(arr[i] % j == 0){
+//         sum++;
+//       }
+//     }
+//     if(sum == 0){
+//       arr2.push(arr[i]);
+//     }
+//   }
+//   return arr2;
+// }
