@@ -1,8 +1,10 @@
 
 // 1 masala
-// let a = "js😊"
-// let b = [...a]
-// console.log(b);
+function aa (a) {
+  let b = [...a]
+  console.log(b);
+}
+aa("js😊")
 
 // 2 masala
 // function num (a,n) {
