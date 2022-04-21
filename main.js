@@ -1,10 +1,10 @@
 
 // 1 masala
-function aa (a) {
-  let b = [...a]
-  console.log(b);
-}
-aa("js😊")
+// function aa (a) {
+//   let b = [...a]
+//   console.log(b);
+// }
+// aa("js😊")
 
 // 2 masala
 // function num (a,n) {
@@ -90,3 +90,43 @@ aa("js😊")
 //   }
 //   return arr2;
 // }
+
+
+
+
+// PALINDROM SONNI TOPISH
+const isPalindrom = function (n) {
+  let newarray = n + ""
+  for (let i= 0; Math.floor(newarray.length / 2); i++) {
+    if (newarray[i] !== newarray[newarray.length - i - 1]) {
+      return false
+    }
+  }
+  return true
+}
+console.log(isPalindrom(32));
+
+// =================
+
+const getPalindrom = function (...args) {
+  const res = []
+  for (let i = 0; i < args.length; i++) {
+    if (getPalindrom(args[i])) {
+      res[res.length] = args[i]
+    }
+  }
+  return res
+}
+
+// const res = getPalindrom(1,4,5,7,12)
+// console.log(res);
+
+
+
+
+
+
+
+
+
+
